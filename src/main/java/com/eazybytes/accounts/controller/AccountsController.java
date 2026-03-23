@@ -23,7 +23,7 @@ public class AccountsController {
     private final IAccountsService accountsService;
     private final IAccountsService iAccountsService;
 
-    @RequestMapping("/status")
+    @GetMapping("/status")
     public String status() {
         return "Accounts microservice is up and running";
     }
